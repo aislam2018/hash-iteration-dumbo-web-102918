@@ -8,7 +8,7 @@ suite_e: "Crumpet the Elf"
 
 def select_winner(passengers)
   passengers.each do |suite, name|
-    if suite == suite_a && name == name.starts("A")
+    if suite == :suite_a && name.starts_with?("A")
       winner = name
       return winner 
 end
